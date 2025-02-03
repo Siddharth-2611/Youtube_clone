@@ -1,0 +1,84 @@
+/* Styles for the body */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a1a, #4d4d4d); /* Dark gradient background */
+  font-family: 'Arial', sans-serif; /* Font style */
+}
+
+/* Modal styles */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe; /* White background for modal */
+  margin-top: 30px;
+  margin-inline: auto;/* Center the modal */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%; /* Could be more or less, depending on screen size */
+  max-width: 400px; /* Set a max width for better appearance */
+  border-radius: 8px; /* Optional: round the corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Optional: add shadow */
+}
+
+/* Close button styles */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Button container styles */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px; /* Space above buttons */
+}
+
+/* Button styles */
+button {
+  padding: 10px;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Heading styles */
+h2 {
+  color: #333; /* Dark text color */
+}
+
+p {
+  color: #666; /* Lighter text color */
+}
