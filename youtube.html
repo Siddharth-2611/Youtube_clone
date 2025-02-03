@@ -14,7 +14,9 @@
     <div class="header">
       <div class="left-section">
         <img class="hamburger-menu" src="media/icons/hamburger-menu.svg" alt="menu">
+        <a href="youtube.html">
         <img class="youtube-menu" src="media/icons/youtube-logo.svg" alt="youtube">
+      </a>
       </div>
       <div class="middle-section">
       <input class="search-bar" type="text" placeholder="Search">
@@ -28,16 +30,22 @@
       </button>
     </div> 
       <div class="right-section">
-        <div class="upload-icon-container">
-        <img class="upload-icon" src="media/icons/upload.svg">
-        <div class="tooltip">Create</div>
-        </div>
+        <div id="uploadSection" class="upload-icon-container" style="cursor: pointer;">
+          <input type="file" id="fileInput" accept="video/*" style="display: none;"> <!-- Hidden file input -->
+          <img class="upload-icon" src="media/icons/upload.svg" alt="Upload">
+          <div class="tooltip">Create</div>
+      </div>
+      <div id="fileName" style="margin-top: 10px;"></div> <!-- Display selected file name -->
         <img class="youtube-apps-icon" src="media/icons/youtube-apps.svg">
         <div class="notifications-icon-container">
           <img class="notification-icon" src="media/icons/notifications.svg">
           <div class="notifications-count">3</div>
           </div>
-        <img class="current-user-picture" src="media/profile/p1.jpg">
+          <div id="userInfo">
+            <a href="login.html" target="_blank">
+            <img class="current-user-picture" src="media/profile/p1.jpg">
+          </div>
+        </a>
       </div>
     </div>
     <div class="sidebar">
@@ -68,9 +76,11 @@
     </div>
     <div class="video-grid">
       <div class="video-preview">
-        <div class="thumbnail-row">      
-          <img class="thumbnail" src="media/thumbnails/zerodha.jpg">
+        <div class="thumbnail-row">  
+          <a href="https://www.youtube.com/watch?v=R2OQjgqbYlI" target="_blank">   
+          <img class="thumbnail" src="media/thumbnails/zerodha.jpg" alt="Nikhil Kamath video">
           <div class="video-time">14:20</div>
+        </a> 
           </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -90,31 +100,35 @@
         </div>
       </div>
       <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="media/thumbnails/mrbeast.jpg">
-        <div class="video-time">8:22</div>
+        <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=d1010B3sKNQ" target="_blank"> <!-- Replace VIDEO_ID with the actual video ID -->
+                <img class="thumbnail" src="media/thumbnails/mrbeast.jpg" alt="MrBeast Video">
+                <div class="video-time">8:22</div>
+            </a>
         </div>
         <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture"src="media/profile/p4.jpg">
-          </div>
-          <div  class="video-info">
-        <p class="video-description">
-          how to esacape Jungle in 10 minutes
-        </p>
-        <p class="Youtuber">
-          Mrbeast
-        </p>
-        <p class="video-stats">
-          114M Views &#183; 17 days ago
-        </p>
+            <div class="channel-picture">
+                <img class="profile-picture" src="media/profile/p4.jpg" alt="Channel Profile Picture">
+            </div>
+            <div class="video-info">
+                <p class="video-description">
+                    How to Escape Jungle in 10 Minutes
+                </p>
+                <p class="Youtuber">
+                    MrBeast
+                </p>
+                <p class="video-stats">
+                    114M Views &#183; 17 days ago
+                </p>
+            </div>
         </div>
-       </div>
-       </div>
+    </div>
        <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="media/thumbnails/logan.jpg">
+          <a href="https://www.youtube.com/watch?v=WjNFGZLJLss" target="_blank">
+          <img class="thumbnail" src="media/thumbnails/logan.jpg" alt="Logan Paul Video">
           <div class="video-time">9:42</div>
+        </a>
           </div>
           <div class="video-info-grid">
             <div class="channel-picture">
@@ -135,8 +149,10 @@
        </div>
        <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="media/thumbnails/horror.jpg">
+          <a href="https://www.youtube.com/watch?v=0Vwqk2j7MZs" target="_blank">
+          <img class="thumbnail" src="media/thumbnails/horror.jpg" alt="conjuring home">
           <div class="video-time">18:23</div>
+        </a>
           </div>
           <div class="video-info-grid">
             <div class="channel-picture">
@@ -157,8 +173,10 @@
        </div>
        <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="media/thumbnails/eminem.jpg">
+          <a href="https://www.youtube.com/watch?v=gOMhN-hfMtY" target="_blank">
+          <img class="thumbnail" src="media/thumbnails/eminem.jpg" alt="Eminem video">
           <div class="video-time">5:34</div>
+        </a>
           </div>
           <div class="video-info-grid">
             <div class="channel-picture">
@@ -180,8 +198,10 @@
 
        <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="media/thumbnails/google.jpg">
+          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank">
+          <img class="thumbnail" src="media/thumbnails/google.jpg" alt="Sundar Pichai Video">
           <div class="video-time">28:17</div>
+        </a>
           </div>
           <div class="video-info-grid">
             <div class="channel-picture">
@@ -201,5 +221,6 @@
          </div>
        </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
